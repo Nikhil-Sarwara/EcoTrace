@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7AYBfBrRm2E=",
+  "success": true,
+  "projectFilePath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/nikhilsarwara/.nuget/packages/microsoft.aspnetcore.openapi/9.0.11/microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "/Users/nikhilsarwara/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
