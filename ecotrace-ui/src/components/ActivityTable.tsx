@@ -1,6 +1,16 @@
 import React from "react";
 
-const ActivityTable = ({activities: []}) => {
+interface Activity {
+  id: string | number;
+  icon: React.ReactNode;
+  label: string;
+  date: string;
+  category: string;
+  impact: string;
+  value: string | number;
+}
+
+const ActivityTable = ({ activities }: { activities: Activity[] }) => {
 
   const getCategoryStyles = (category: string) => {
     const styles = {
