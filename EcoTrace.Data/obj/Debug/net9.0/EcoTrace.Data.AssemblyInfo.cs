@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoTrace.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2dcea6bf97a9677f79ff0c71f939343d9cf169f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7f44521061c08bc5f9a5eb737684d72f7626094")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoTrace.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoTrace.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

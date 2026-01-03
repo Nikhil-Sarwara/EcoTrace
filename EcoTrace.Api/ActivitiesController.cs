@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using EcoTrace.Core;
 using EcoTrace.Core.DTOs;
 using EcoTrace.Data;
+using EcoTrace.Core.Services;
+using EcoTrace.Core.Interfaces;
 
 namespace EcoTrace.Api.Controllers;
 
@@ -11,10 +13,12 @@ namespace EcoTrace.Api.Controllers;
 public class ActivitiesController : ControllerBase
 {
     private readonly EcoTraceDbContext _context;
+    private readonly ICarbonService _carbonService;
 
-    public ActivitiesController(EcoTraceDbContext context)
+    public ActivitiesController(EcoTraceDbContext context, ICarbonService carbonService)
     {
         _context = context;
+        _carbonService = carbonService;
     }
 
     // 1. GET: api/activities (Fetch all logs)
@@ -28,14 +32,14 @@ public class ActivitiesController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<CarbonActivity>> CreateActivity(CreateActivityRequest request)
     {
-        // Use our Math Logic from EcoTrace.Core
-        double calculatedCO2 = CarbonCalculator.Calculate(request.Category, request.Quantity);
+        // Use injected carbon service
+        double total = _carbonService.Calculate(request.Category, request.Quantity);
 
         var newActivity = new CarbonActivity
         {
             Category = request.Category,
             Quantity = request.Quantity,
-            TotalCO2 = calculatedCO2,
+            TotalCO2 = total,
             CreatedAt = DateTime.UtcNow
         };
 
