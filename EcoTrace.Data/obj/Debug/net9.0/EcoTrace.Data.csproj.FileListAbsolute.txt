@@ -1,0 +1,16 @@
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/bin/Debug/net9.0/EcoTrace.Data.deps.json
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/bin/Debug/net9.0/EcoTrace.Data.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/bin/Debug/net9.0/EcoTrace.Data.pdb
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/bin/Debug/net9.0/EcoTrace.Core.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/bin/Debug/net9.0/EcoTrace.Core.pdb
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.csproj.AssemblyReference.cache
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.AssemblyInfoInputs.cache
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.AssemblyInfo.cs
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.csproj.CoreCompileInputs.cache
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.sourcelink.json
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.3BC2929B.Up2Date
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/refint/EcoTrace.Data.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/EcoTrace.Data.pdb
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/Debug/net9.0/ref/EcoTrace.Data.dll

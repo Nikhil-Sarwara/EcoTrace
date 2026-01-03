@@ -1,6 +1,15 @@
+using EcoTrace.Core;
+using EcoTrace.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 // Add services to the container.
+builder.Services.AddDbContext<EcoTraceDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
