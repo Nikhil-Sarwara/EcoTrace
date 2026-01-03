@@ -8,13 +8,48 @@ import { activityService } from "../services/api";
 const Dashboard: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [summary, setSummary] = useState<any>(null);
+  const [activityLog, setActivityLog] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const mapActivitiesToUI = (backendData: any[]) => {
+    return backendData.map((item) => ({
+      id: item.id.toString(),
+      category: item.category,
+      label: item.name, 
+      value: `${item.totalCO2.toFixed(1)} kg`, 
+      // Format date to "Oct 24"
+      date: new Date(item.createdAt).toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+      }),
+      // Assign icon based on category
+      icon:
+        item.category === "Transport"
+          ? "🚗"
+          : item.category === "Food"
+          ? "🥗"
+          : "⚡",
+      // Determine impact (e.g., if > 5kg, it's high)
+      impact: item.totalCO2 > 5 ? "high" : "low",
+    }));
+  };
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const data = await activityService.getSummary();
-        setSummary(data);
+        setLoading(true);
+        // Fetch both simultaneously for speed
+        const [summaryData, rawActivities] = await Promise.all([
+          activityService.getSummary(),
+          activityService.getActivities(),
+        ]);
+
+        setSummary(summaryData);
+
+        const formattedActivities = mapActivitiesToUI(rawActivities);
+        setActivityLog(formattedActivities);
+      } catch (err) {
+        console.error("Integration Error:", err);
       } finally {
         setLoading(false);
       }
@@ -74,14 +109,14 @@ const Dashboard: React.FC = () => {
         />
         <StatCard
           label="Monthly Target"
-          value="500"
+          value="0"
           unit="kg"
           trend={5}
           color="blue"
         />
         <StatCard
           label="Offset Progress"
-          value="21"
+          value={summary?.treeEquivalent.toString() || "0"}
           unit="Trees"
           trend={0}
           color="orange"
@@ -118,7 +153,7 @@ const Dashboard: React.FC = () => {
                 </svg>
               </div>
             </div>
-            <ActivityTable />
+            <ActivityTable activities={activityLog} />
           </div>
         </div>
 

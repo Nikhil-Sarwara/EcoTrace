@@ -1,38 +1,6 @@
 import React from "react";
 
-const ActivityTable: React.FC = () => {
-  const activities = [
-    {
-      id: "1",
-      category: "Transport",
-      label: "Commute (EV)",
-      value: "1.2 kg",
-      date: "Oct 24",
-      icon: "🚗",
-      color: "blue",
-      impact: "low",
-    },
-    {
-      id: "2",
-      category: "Food",
-      label: "Vegan Lunch",
-      value: "0.4 kg",
-      date: "Oct 24",
-      icon: "🥗",
-      color: "green",
-      impact: "low",
-    },
-    {
-      id: "3",
-      category: "Energy",
-      label: "AC usage (4h)",
-      value: "4.8 kg",
-      date: "Oct 23",
-      icon: "⚡",
-      color: "yellow",
-      impact: "high",
-    },
-  ];
+const ActivityTable = ({activities: []}) => {
 
   const getCategoryStyles = (category: string) => {
     const styles = {
