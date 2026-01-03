@@ -10,9 +10,9 @@ public static class CarbonCalculator
         // These factors are kg of CO2 per unit (miles, kWh, lbs)
         return category.ToLower() switch
         {
-            "driving"     => quantity * 0.411, // Avg kg CO2 per mile (Passenger Car)
-            "electricity" => quantity * 0.385, // Avg kg CO2 per kWh
-            "meat"        => quantity * 12.5,   // Avg kg CO2 per lb of beef
+            "Transport"     => quantity * 0.411, // Avg kg CO2 per mile (Passenger Car)
+            "Home energy" => quantity * 0.385, // Avg kg CO2 per kWh
+            "Food"        => quantity * 12.5,   // Avg kg CO2 per lb of beef
             _             => 0                 // Default if category isn't found
         };
     }

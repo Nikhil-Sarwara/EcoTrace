@@ -1,0 +1,48 @@
+# === .NET / C# Specific ===
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bin/
+obj/
+
+# Visual Studio / Rider files
+.vs/
+.idea/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# User secrets and local settings
+appsettings.Development.json
+appsettings.Local.json
+
+# === Node.js / React (ecotrace-ui) Specific ===
+# Dependencies
+ecotrace-ui/node_modules/
+ecotrace-ui/dist/
+ecotrace-ui/build/
+
+# Logs
+ecotrace-ui/npm-debug.log*
+ecotrace-ui/yarn-debug.log*
+ecotrace-ui/yarn-error.log*
+
+# Vite / React local env files
+ecotrace-ui/.env
+ecotrace-ui/.env.local
+ecotrace-ui/.env.development.local
+ecotrace-ui/.env.test.local
+ecotrace-ui/.env.production.local
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# === Test Results & Coverage ===
+TestResults/
+*.tmpprog
+*.log

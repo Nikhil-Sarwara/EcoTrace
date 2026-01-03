@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj": {}
+    "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj": {}
   },
   "projects": {
-    "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj": {
+    "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj",
+        "projectUniqueName": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj",
         "projectName": "EcoTrace.Api",
-        "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj",
-        "packagesPath": "/Users/nikhilsarwara/.nuget/packages/",
-        "outputPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/obj/",
+        "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Api/EcoTrace.Api.csproj",
+        "packagesPath": "/Users/kanishqmehta/.nuget/packages/",
+        "outputPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikhilsarwara/.nuget/NuGet/NuGet.Config"
+          "/Users/kanishqmehta/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,11 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
-                "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj"
+              "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
+                "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj"
               },
-              "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj": {
-                "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj"
+              "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj": {
+                "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj"
               }
             }
           }
@@ -53,17 +53,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[9.0.11, )"
             }
           },
           "imports": [
@@ -85,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
+    "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj",
+        "projectUniqueName": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj",
         "projectName": "EcoTrace.Core",
-        "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj",
-        "packagesPath": "/Users/nikhilsarwara/.nuget/packages/",
-        "outputPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/obj/",
+        "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj",
+        "packagesPath": "/Users/kanishqmehta/.nuget/packages/",
+        "outputPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikhilsarwara/.nuget/NuGet/NuGet.Config"
+          "/Users/kanishqmehta/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -144,21 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj": {
+    "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj",
+        "projectUniqueName": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj",
         "projectName": "EcoTrace.Data",
-        "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj",
-        "packagesPath": "/Users/nikhilsarwara/.nuget/packages/",
-        "outputPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Data/obj/",
+        "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/EcoTrace.Data.csproj",
+        "packagesPath": "/Users/kanishqmehta/.nuget/packages/",
+        "outputPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/nikhilsarwara/.nuget/NuGet/NuGet.Config"
+          "/Users/kanishqmehta/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -170,8 +160,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
-                "projectPath": "/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj"
+              "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj": {
+                "projectPath": "/Users/kanishqmehta/Desktop/Proj with Nikki/EcoTrace/EcoTrace.Core/EcoTrace.Core.csproj"
               }
             }
           }
@@ -191,20 +181,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -221,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
