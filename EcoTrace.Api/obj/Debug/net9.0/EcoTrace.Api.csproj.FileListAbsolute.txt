@@ -34,6 +34,9 @@
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Mono.TextTemplating.dll
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Npgsql.dll
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/System.CodeDom.dll
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/System.Composition.AttributedModel.dll
 /Users/nikhilsarwara/Desktop/projects/EcoTrace/EcoTrace.Api/bin/Debug/net9.0/System.Composition.Convention.dll
