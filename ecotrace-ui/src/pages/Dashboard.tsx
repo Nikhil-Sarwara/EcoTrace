@@ -61,7 +61,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         <div className="lg:col-span-2">
-          <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-sm h-full">
+          <div className="bg-white p-8 rounded-4xl border border-slate-200/60 shadow-sm h-full">
             <h3 className="text-xl font-bold mb-6 text-slate-800">
               Quick Analytics
             </h3>
