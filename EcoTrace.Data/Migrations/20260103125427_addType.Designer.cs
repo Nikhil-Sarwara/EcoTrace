@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EcoTrace.Data.Migrations
 {
     [DbContext(typeof(EcoTraceDbContext))]
-    [Migration("20260103051252_InitialPostgresCreate")]
-    partial class InitialPostgresCreate
+    [Migration("20260103125427_addType")]
+    partial class addType
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,11 +40,19 @@ namespace EcoTrace.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<double>("Quantity")
                         .HasColumnType("double precision");
 
                     b.Property<double>("TotalCO2")
                         .HasColumnType("double precision");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
