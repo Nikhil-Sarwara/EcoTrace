@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { activityService } from "../services/api";
 
 interface ModalProps {
   onClose: () => void;
@@ -24,27 +25,36 @@ const AddActivityModal: React.FC<ModalProps> = ({ onClose }) => {
   const [dietType, setDietType] = useState("omnivore");
   const [servings, setServings] = useState("1");
 
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // This object contains all data needed for your .NET backend calculation
+
     const payload = {
-      category,
-      label,
-      details: {
-        transport:
-          category === "transport"
-            ? { distance: Number(distance), vehicleType }
-            : null,
-        energy:
-          category === "energy"
-            ? { usageValue: Number(usageValue), energyType }
-            : null,
-        food:
-          category === "food" ? { dietType, servings: Number(servings) } : null,
-      },
+      category: category.charAt(0).toUpperCase() + category.slice(1), // Match .NET "Transport"
+      name: label,
+      type:
+        category === "transport"
+          ? vehicleType
+          : category === "energy"
+          ? energyType
+          : dietType,
+      quantity:
+        category === "transport"
+          ? Number(distance)
+          : category === "energy"
+          ? Number(usageValue)
+          : Number(servings),
     };
-    console.log("Activity Submitted:", payload);
-    onClose();
+
+    try {
+      await activityService.createActivity(payload);
+      onClose(); // Close modal on success
+      // Optional: Refresh dashboard data (see next step)
+      window.location.reload();
+    } catch (error) {
+      console.error("Failed to add activity", error);
+      alert("Check if your API is running!");
+    }
   };
 
   const categoryInfo = {

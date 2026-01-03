@@ -1,11 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import StatCard from "../components/StatCard";
 import ActivityTable from "../components/ActivityTable";
 import AddActivityModal from "../components/AddActivityModal";
+import { activityService } from "../services/api";
 
 const Dashboard: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [summary, setSummary] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const data = await activityService.getSummary();
+        setSummary(data);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadData();
+  }, []);
+  if (loading)
+    return (
+      <div className="p-10 text-center text-slate-500">Loading Impact...</div>
+    );
 
   return (
     <Layout>
@@ -48,7 +67,7 @@ const Dashboard: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <StatCard
           label="Total Carbon"
-          value="420"
+          value={summary?.totalEmissions.toString() || "0"}
           unit="kg"
           trend={-12}
           color="emerald"

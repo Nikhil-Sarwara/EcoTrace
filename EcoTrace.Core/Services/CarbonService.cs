@@ -12,11 +12,12 @@ public class CarbonService : ICarbonService
         _config = config;
     }
 
-    public double Calculate(string category, double quantity)
+    public double Calculate(string category, string type, double quantity)
     {
-        // Fetch factor from appsettings.json, default to 0 if not found
-        double factor = _config.GetValue<double>($"CarbonFactors:{category}");
-        
-        return quantity * factor;
+        string configPath = $"CarbonFactors:{category}:{type}";
+
+        double factor = _config.GetValue<double>(configPath);
+
+        return Math.Round(quantity * factor, 2);
     }
 }

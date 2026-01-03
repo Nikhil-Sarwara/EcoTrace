@@ -7,6 +7,8 @@ public class CarbonActivity
 
     // What the user did (Driving, Electricity, Meat)
     public string Category { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Type { get; set; } = string.Empty;
 
     // The raw input from the user (e.g., 50 miles)
     public double Quantity { get; set; }
